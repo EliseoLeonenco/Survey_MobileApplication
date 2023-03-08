@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SurveyStatsActivity">
+
+    <TextView
+        android:id="@+id/textViewSurveyTitleStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/survey_title"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQuestion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/question_1_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQuestion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/question_2_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion1Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/question_3_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/question_4_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion3Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/question_5_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion4Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/question_6_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion5Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/question_7_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion6Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/question_8_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion7Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/question_9_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion8Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/question_10_col"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion9Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion4Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion4" />
+
+    <TextView
+        android:id="@+id/textViewQuestion5Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion6Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion6" />
+
+    <TextView
+        android:id="@+id/textViewQuestion7Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion7" />
+
+    <TextView
+        android:id="@+id/textViewQuestion8Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion8" />
+
+    <TextView
+        android:id="@+id/textViewQuestion9Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion9" />
+
+    <TextView
+        android:id="@+id/textViewQuestion10Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion10" />
+
+    <TextView
+        android:id="@+id/textViewQuestion1Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion1Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion1Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion1Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion1Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion1Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion1Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion1Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion1Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion1Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion1Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion1Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion1Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion1Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion1Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion1Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion1Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion1Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion1Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion2Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion2Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion2Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion2Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion2Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion2Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion2Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion2Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion2Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion2Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion2Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion2Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion2Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion2Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion2Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion3Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion3Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion3Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion3Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion3Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion3Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion3Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion3Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion3Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion3Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion3Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion3Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion3Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion3Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion3Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion3Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion3Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion3Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion3Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion4Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion4" />
+
+    <TextView
+        android:id="@+id/textViewQuestion4Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion4Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion4Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion4Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion4Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion4Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion4Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion4Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion4Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion4Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion4Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion4Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion4Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion4Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion4Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion4Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion4Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion4Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion5Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion5Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion5Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion5Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion5Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion5Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion5Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion5Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion5Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion5Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion5Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion5Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion5Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion5Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion5Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion5Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion5Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion5Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion5Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion6Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion6" />
+
+    <TextView
+        android:id="@+id/textViewQuestion6Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion6Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion6Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion6Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion6Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion6Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion6Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion6Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion6Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion6Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion6Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion6Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion6Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion6Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion6Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion6Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion6Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion6Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion7Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion7" />
+
+    <TextView
+        android:id="@+id/textViewQuestion7Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion7Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion7Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion7Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion7Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion7Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion7Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion7Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion7Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion7Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion7Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion7Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion7Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion7Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion7Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion7Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion7Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion7Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion8Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion8" />
+
+    <TextView
+        android:id="@+id/textViewQuestion8Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion8Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion8Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion8Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion8Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion8Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion8Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion8Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion8Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion8Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion8Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion8Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion8Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion8Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion8Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion8Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion8Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion8Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion9Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion9" />
+
+    <TextView
+        android:id="@+id/textViewQuestion9Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion9Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion9Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion9Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion9Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion9Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion9Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion9Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion9Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion9Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion9Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion9Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion9Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion9Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion9Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion9Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion9Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion9Answer5" />
+
+    <TextView
+        android:id="@+id/textViewQuestion10Answer1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/strongly_agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion10" />
+
+    <TextView
+        android:id="@+id/textViewQuestion10Answer2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/agree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion10Answer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion10Answer3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/neither_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion10Answer2" />
+
+    <TextView
+        android:id="@+id/textViewQuestion10Answer4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion10Answer3" />
+
+    <TextView
+        android:id="@+id/textViewQuestion10Answer5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/strongly_disagree_col"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion10Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyAgrCount10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion10Answer1"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion10Answer1" />
+
+    <TextView
+        android:id="@+id/textViewAgrCount10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion10Answer2"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion10Answer2" />
+
+    <TextView
+        android:id="@+id/textViewNeitherCount10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion10Answer3"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion10Answer3" />
+
+    <TextView
+        android:id="@+id/textViewDissCount10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion10Answer4"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion10Answer4" />
+
+    <TextView
+        android:id="@+id/textViewStronglyDissCount10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewQuestion10Answer5"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion10Answer5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
